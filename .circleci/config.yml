@@ -43,7 +43,11 @@ jobs:
           name: Upload Coverage
           command: ./node_modules/.bin/codecov
 
-
+      # Automatically deploy docs to gh-pages
+      - deploy:
+          name: Deploy
+          command: yarn run authenticate && yarn run publish-docs
+          
 workflows:
   version: 2
   jest:
