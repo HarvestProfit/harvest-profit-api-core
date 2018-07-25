@@ -1,0 +1,10 @@
+{
+    "plugins": ["plugins/markdown"],
+    "templates": {
+      "includeDate": false,
+      "linenums": true,
+      "syntaxTheme": "dark",
+      "systemName": "Harvest Profit Api Core",
+      "theme": "slate"
+    }
+}
