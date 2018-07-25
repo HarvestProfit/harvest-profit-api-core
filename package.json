@@ -20,6 +20,10 @@
     "type": "git",
     "url": "git+https://github.com/HarvestProfit/harvest-profit-api-core.git"
   },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "keywords": [
     "harvest",
     "profit",
