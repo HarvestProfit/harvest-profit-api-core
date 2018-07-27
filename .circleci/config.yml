@@ -5,6 +5,10 @@ jobs:
       - image: circleci/node:latest
 
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "69:f9:f4:03:d6:12:18:f3:97:eb:e1:75:7a:1e:65:1a"
+
       # Use the NPM registry
       - run:
           name: Add NPM_TOKEN
@@ -47,7 +51,7 @@ jobs:
       - deploy:
           name: Deploy
           command: yarn run authenticate && yarn run publish-docs
-          
+
 workflows:
   version: 2
   jest:
