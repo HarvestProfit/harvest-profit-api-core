@@ -1,8 +1,8 @@
 {
   "name": "@harvest-profit/api-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core Api.",
-  "main": "dist.js",
+  "main": "dist/index.js",
   "private": false,
   "dependencies": {
     "axios": "^0.18.0",
