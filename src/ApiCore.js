@@ -46,7 +46,7 @@ class ApiCore{
       if (original && original.url.indexOf('refresh') === -1 && !original.harvest_retried && responseCode === 403) {
         original.harvest_retried = true;
         return new Promise((resolve, reject) => {
-          this._getAuthenticated('/refresh').then((response) => {
+          this.getAuthenticated('/refresh').then((response) => {
             original.headers.Authorization = response.data.auth_token;
             return resolve(axios(original));
           }).catch((exception) => {
