@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Core Api.",
   "main": "dist.js",
+  "private": false,
   "dependencies": {
     "axios": "^0.18.0",
     "js-cookie": "^2.2.0"
